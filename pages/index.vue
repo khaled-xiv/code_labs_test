@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        version-2
+        code_labs_test
       </h1>
       <div class="links">
         <a
@@ -22,21 +22,26 @@
         >
           GitHub
         </a>
-        <a
-          href="profile"
+        <nuxt-link
+          to="profile"
           
           rel="noopener noreferrer"
           class="button--grey"
         >
           Profile Card
-        </a>
+        </nuxt-link>
       </div>
+      
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Home Page',
+  },
+}
 </script>
 
 <style>

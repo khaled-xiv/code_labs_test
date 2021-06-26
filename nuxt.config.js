@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'version-2',
+    title: 'code_labs_test',
     htmlAttrs: {
       lang: 'en'
     },
@@ -35,6 +35,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    
     '@nuxt/content',
   ],
 

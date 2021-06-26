@@ -1,14 +1,18 @@
 <template>
-  <div>
+  <profile>
+
     <nuxt-content :document="profile" />
-  </div>
+  </profile>
 </template>
 <script>
 export default {
-    async asyncData({ $content, params }) {
-      const profile = await $content('profile', params.profile).fetch()
+  head: {
+    title: 'Profile Page',
+  },
+  async asyncData({ $content, params }) {
+    const profile = await $content("profile", params.profile).fetch();
 
-      return { profile }
-    }
-  }
+    return { profile };
+  },
+};
 </script>

@@ -1,29 +1,9 @@
 <template>
   <div>
-    <Nuxt />
-    <MDXProvider :components="MDXComponents">
-      <profile />
-    </MDXProvider>
+    <Nuxt />  
   </div>
 </template>
  
-<script>
-import { MDXProvider } from "@mdx-js/vue";
-import Profile from "~/components/profile.mdx";
-import MDXComponents from "~/components/mdx-components.js";
-
-export default {
-  components: {
-    MDXProvider,
-    Profile,
-  },
-  data: () => ({
-    MDXComponents,
-  }),
-};
-</script>
-
-
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
