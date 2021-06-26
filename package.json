@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@mdx-js/vue-loader": "^1.6.22",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/mdx": "0.0.1",
     "core-js": "^3.9.1",
